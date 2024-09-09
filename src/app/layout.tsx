@@ -27,8 +27,8 @@ export default function RootLayout({
               {[
                 {
                   title: "Email",
-                  href: "mailto:dither@dither.dev",
-                  display: "dither@dither.dev",
+                  href: "mailto:hi@dither.dev",
+                  display: "hi@dither.dev",
                 },
                 {
                   title: "Twitter",
