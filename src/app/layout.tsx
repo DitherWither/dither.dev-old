@@ -45,8 +45,8 @@ export default function RootLayout({
                   href: "https://discord.com/users/723414810644971572",
                   display: "@ditherwither",
                 },
-              ].map((contact) => (
-                <ContactItem {...contact} />
+              ].map((contact, i) => (
+                <ContactItem key={i} {...contact} />
               ))}
             </ul>
           </footer>
