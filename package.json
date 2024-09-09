@@ -1,0 +1,14 @@
+{
+  "name": "dither.dev",
+  "version": "1.0.0",
+  "description": "Personal website for DitherWither",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0"
+  }
+}
