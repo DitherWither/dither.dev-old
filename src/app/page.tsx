@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <div className="flex flex-col gap-4">
         <p className="font-bold">
-          Backend Developer, CEO/Co-Founder of{" "}
+          Full-Stack Developer, CEO/Co-Founder of{" "}
           <Link className="underline" href="https://skann.me">
             Skann
           </Link>
@@ -29,6 +29,16 @@ export default function Home() {
           and{" "}
           <Link className="font-bold underline" href="https://orm.drizzle.team">
             Drizzle ORM
+          </Link>
+        </p>
+        <p>
+          For a dedicated backend, I'd use{" "}
+          <Link className="font-bold underline" href="https://spring.io">
+            Spring Boot
+          </Link>{" "}
+          or{" "}
+          <Link className="font-bold underline" href="https://go.dev">
+            Go
           </Link>
         </p>
         <p>
