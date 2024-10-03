@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { title } from "process";
 
 export const metadata: Metadata = {
   title: "DitherWither",
@@ -44,6 +45,11 @@ export default function RootLayout({
                   title: "Discord",
                   href: "https://discord.com/users/723414810644971572",
                   display: "@ditherwither",
+                },
+                {
+                  title: "LinkedIn",
+                  href: "https://www.linkedin.com/in/ditherwither",
+                  display: "ditherwither",
                 },
               ].map((contact, i) => (
                 <ContactItem key={i} {...contact} />
