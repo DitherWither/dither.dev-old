@@ -1,36 +1,45 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
       <div className="flex flex-col gap-4">
         <p className="font-bold">
-          Attempt 2 at making a blog (lets hope i don't forget to post here)
+          Backend Developer, CEO/Co-Founder of{" "}
+          <Link className="underline" href="https://skann.me">
+            Skann
+          </Link>
         </p>
         <p>
-          I'm primarily a backend developer, although I occasionally write
-          frontend code. Currently working at{" "}
-          <a href="https://leapflow.tech" className="underline font-bold">
-            Leapflow
-          </a>
-        </p>
-        <p>
-          I'm making this blog in next.js, because that's what I've used the
-          most. See the source code on{" "}
-          <a
-            href="https://github.com/ditherwither/dither.dev"
-            className="underline font-bold"
+          My preferred stack is{" "}
+          <Link className="font-bold underline" href="https://nextjs.org">
+            Next.js
+          </Link>{" "}
+          and{" "}
+          <Link className="font-bold underline" href="https://tailwindcss.com">
+            Tailwind CSS
+          </Link>
+          , along with{" "}
+          <Link
+            className="font-bold underline"
+            href="https://www.postgresql.org"
           >
-            github
-          </a>
+            PostgreSQL
+          </Link>{" "}
+          and{" "}
+          <Link className="font-bold underline" href="https://orm.drizzle.team">
+            Drizzle ORM
+          </Link>
         </p>
         <p>
           I'm currently planning to learn competetive programming, and
           participate in{" "}
-          <a
+          <Link
             href="https://www.iarcs.org.in/inoi/"
             className="font-bold underline"
           >
             Indian Computing Olympiad
-          </a>
+          </Link>
         </p>
       </div>
     </>
