@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { title } from "process";
+import { inter, interTight } from "~/fonts";
 
 export const metadata: Metadata = {
   title: "DitherWither",
@@ -14,12 +14,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        <div className="min-h-screen lg:w-[100ch] lg:border-e flex flex-col">
-          <header>
-            <h1 className="text-8xl">DitherWither</h1>
+      <body
+        className={`antialiased ${inter.className} max-w-[120ch] bg-gradient-to-b from-slate-900 to-slate-700`}
+      >
+        <div className="min-h-screen flex flex-col">
+          <header className="p-12">
+            <h1
+              className={`text-6xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-r bg-linear-65 from-purple-500 to-pink-500 font-semibold ${interTight.className}`}
+            >
+              DitherWither
+            </h1>
+            <p className="text-3xl text-neutral-400">
+              Full-Stack Web Developer
+            </p>
           </header>
-          <main className="pt-12 p-4 md:max-w-[80ch] mx-auto flex-grow">
+          <main className="p-4 md:max-w-[80ch] mx-auto flex-grow">
             {children}
           </main>
           <footer className="p-12">
@@ -51,8 +60,8 @@ export default function RootLayout({
                   href: "https://www.linkedin.com/in/ditherwither",
                   display: "ditherwither",
                 },
-              ].map((contact, i) => (
-                <ContactItem key={i} {...contact} />
+              ].map((contact) => (
+                <ContactItem key={contact.href} {...contact} />
               ))}
             </ul>
           </footer>
@@ -73,7 +82,7 @@ function ContactItem({
 }>) {
   return (
     <li>
-      {title + ": "}
+      {`${title}: `}
       <a href={href} className="underline font-bold">
         {display}
       </a>

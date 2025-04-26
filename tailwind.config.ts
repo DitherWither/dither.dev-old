@@ -13,6 +13,11 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+
+    fontFamily: {
+      sans: "var(--font-inter)",
+      tight: "var(--font-inter-tight)",
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };

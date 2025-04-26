@@ -1,13 +1,14 @@
 import Link from "next/link";
+import { interTight } from "~/fonts";
 
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-4">
-        <p className="font-bold">
-          Full-Stack Developer, CEO/Co-Founder of{" "}
-          <Link className="underline" href="https://skann.me">
-            Skann
+      <section className="flex flex-col gap-4">
+        <p>
+          Currently working as engineering lead at{" "}
+          <Link className="font-bold underline" href="https://leapflow.tech">
+            Leapflow
           </Link>
         </p>
         <p>
@@ -41,17 +42,79 @@ export default function Home() {
             Go
           </Link>
         </p>
-        <p>
-          I'm currently planning to learn competetive programming, and
-          participate in{" "}
-          <Link
-            href="https://www.iarcs.org.in/inoi/"
-            className="font-bold underline"
-          >
-            Indian Computing Olympiad
-          </Link>
-        </p>
-      </div>
+      </section>
+      <section>
+        <h2 className={`text-3xl md:text-5xl pt-10 ${interTight.className}`}>
+          Major Projects
+        </h2>
+        <ul className="list-disc px-9 pt-6 flex flex-col gap-4">
+          <li>
+            <Link
+              className="font-bold underline"
+              href="https://github.com/DitherWither/muon.club"
+            >
+              Muon.club:
+            </Link>{" "}
+            Websockets based omegle clone
+          </li>
+          <li>
+            <Link
+              className="font-bold underline"
+              href="https://hex.pm/packages/directories"
+            >
+              Directories:
+            </Link>{" "}
+            A lightweight gleam package to get standard locations of directories
+            for temporary files, config, cache, etc. (63k+ downloads)
+          </li>
+          <li>
+            <Link
+              className="font-bold underline"
+              href="https://hex.pm/packages/platform"
+            >
+              Platform:
+            </Link>{" "}
+            Zero dependency platform detection library for gleam. (63k+
+            downloads)
+          </li>
+          <li>
+            <Link
+              className="font-bold underline"
+              href="https://github.com/DitherWither/butterscotch"
+            >
+              Butterscotch:
+            </Link>{" "}
+            An operating system being developed in rust
+          </li>
+          <li>
+            <Link
+              className="font-bold underline"
+              href="https://github.com/DitherWither/OxyWeb"
+            >
+              OxyWeb:
+            </Link>{" "}
+            Web server in rust with zero dependencies/crates
+          </li>
+          <li>
+            <Link
+              className="font-bold underline"
+              href="https://github.com/ditherwither/etchteateapee"
+            >
+              EtchTeaTeepe:
+            </Link>{" "}
+            High level HTTP framework for C
+          </li>
+          <li>
+            <Link
+              className="font-bold underline"
+              href="https://ditherwither.github.io/pomotime/"
+            >
+              Pomotime:
+            </Link>{" "}
+            A simple, lightweight, and fast time tracking app
+          </li>
+        </ul>
+      </section>
     </>
   );
 }
